@@ -4,7 +4,7 @@ import AvatarImg3 from '../assets/testimonial/avatar3.png';
 import AvatarImg4 from '../assets/testimonial/avatar4.png';
 import AvatarImg5 from '../assets/testimonial/avatar5.png';
 
-import { suitModel, suitModel2, suitModel3, ArrowRightImg } from '../assets'
+import { ArrowRightImg } from '../assets'
 
 export const navLinks = [
   {
@@ -66,32 +66,32 @@ export const testimonials = {
   ],
 };
 
-export const features = {
-  feature1: {
-    pretitle: 'Alwalys online',
-    title: 'Real-time support with cloud',
-    subtitle:
-      'Real-time support with cloud enables immediate assistance and guidance using cloud-based technology, from anywhere with an internet connection.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
-    image: suitModel,
-  },
-  feature2: {
-    pretitle: 'Free some cost',
-    title: 'Save cost for you and family',
-    subtitle:
-      'Saving costs for you and your family can be achieved through smart financial planning, such as creating a budget, reducing unnecessary expenses, and exploring cost-saving opportunities like discounts and rewards programs.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
-    image: suitModel2,
-  },
-  feature3: {
-    pretitle: 'Use anytime',
-    title: 'Use anytime when you need',
-    subtitle:
-      'A useful tool to have anytime you need is a planner or organizer, which can help you keep track of important tasks, appointments, and deadlines, and ensure you stay on top of your schedule and responsibilities.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
-    image: suitModel3,
-  },
-};
+// export const features = {
+//   feature1: {
+//     pretitle: 'Alwalys online',
+//     title: 'Real-time support with cloud',
+//     subtitle:
+//       'Real-time support with cloud enables immediate assistance and guidance using cloud-based technology, from anywhere with an internet connection.',
+//     btnLink: 'Learn more',
+//     btnIcon: ArrowRightImg,
+//     image: suitModel,
+//   },
+//   feature2: {
+//     pretitle: 'Free some cost',
+//     title: 'Save cost for you and family',
+//     subtitle:
+//       'Saving costs for you and your family can be achieved through smart financial planning, such as creating a budget, reducing unnecessary expenses, and exploring cost-saving opportunities like discounts and rewards programs.',
+//     btnLink: 'Learn more',
+//     btnIcon: ArrowRightImg,
+//     image: suitModel2,
+//   },
+//   feature3: {
+//     pretitle: 'Use anytime',
+//     title: 'Use anytime when you need',
+//     subtitle:
+//       'A useful tool to have anytime you need is a planner or organizer, which can help you keep track of important tasks, appointments, and deadlines, and ensure you stay on top of your schedule and responsibilities.',
+//     btnLink: 'Learn more',
+//     btnIcon: ArrowRightImg,
+//     image: suitModel3,
+//   },
+// };

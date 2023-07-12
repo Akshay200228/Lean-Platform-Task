@@ -2,7 +2,7 @@ import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import styles from '../style';
 import './Preloader.css';
-import { logo6 } from '../assets';
+import { mh } from '../assets';
 
 const Preloader = () => {
   const springProps = useSpring({
@@ -21,7 +21,7 @@ const Preloader = () => {
   return (
     <div className={`${styles.flexCenter} h-screen preloader-container`}> {/* Update the class name */}
       <animated.img
-        src={logo6}
+        src={mh}
         alt="Logo"
         className={`${styles.preloaderLogo} ${styles.pulsatingAnimation}`}
         style={springProps}

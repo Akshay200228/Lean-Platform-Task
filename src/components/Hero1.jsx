@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { iMac1, Object_cal, phone, price, model3, model4, ArrowRightImg, rectangle, char } from '../assets';
+import { ArrowRightImg, rectangle, char } from '../assets';
 import styles from '../style';
 import './Hero1.css';
 
