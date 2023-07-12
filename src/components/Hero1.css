@@ -1,0 +1,40 @@
+@keyframes custom-bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-custom-bounce {
+  animation: custom-bounce 3s ease-in-out infinite;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #6674CC, #9059FF, #FF6B98);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
