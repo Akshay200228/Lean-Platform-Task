@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from '../style';
 import { form } from '../assets';
+import { Textarea } from '@material-tailwind/react';
+// import { CategoryForm } from '../components';
 
 const PersonalInfo = () => {
   const [profileImage, setProfileImage] = useState(null);
@@ -37,12 +39,12 @@ const PersonalInfo = () => {
   };
 
   return (
-    <div className={`${styles.paddingY} ${styles.paddingX} mt-14 sm:mt-24`}>
-      <h2 className="mb-6 text-2xl font-bold text-center sm:mb-10">Personal Information</h2>
+    <div className={`${styles.paddingY} ${styles.paddingX} bg-gray-50  mt-14 sm:mt-24`}>
       <div className={`flex flex-col lg:flex-row h-full`}>
         {/* Left side - Profile Image Upload */}
         <div className="flex items-center justify-center lg:w-1/2">
           <label htmlFor="image-upload" className="relative text-[#00487C]">
+            <h2 className="mb-6 text-2xl font-bold text-start sm:mb-10 text-[#00487C]">Personal Information :</h2>
             {profileImage ? (
               <img
                 src={profileImage}
@@ -50,10 +52,10 @@ const PersonalInfo = () => {
                 className="object-cover shadow-2xl mb-4 sm:mb-0 w-72 h-72 sm:w-[522px] sm:h-[430px] rounded-3xl cursor-pointer"
               />
             ) : (
-              <div className="flex items-center justify-center w-72 h-72 mb-4 sm:mb-0 sm:w-[422px] sm:h-[430px] rounded-3xl bg-gray-200 cursor-pointer">
+              <div className="flex items-center justify-center shadow-xl w-72 h-72 mb-4 sm:mb-0 sm:w-[522px] sm:h-[430px] rounded-3xl bg-gray-200 cursor-pointer">
                 <img
                   src={form}
-                  className="w-72 h-72 sm:w-[522px] sm:h-[430px] shadow-2xl"
+                  className="w-72 h-72 sm:w-[522px] sm:h-[430px] rounded-3xl"
                 />
               </div>
             )}
@@ -116,42 +118,81 @@ const PersonalInfo = () => {
                 />
               </div>
               <hr />
-              <div className="flex mb-4">
-                <div className="mr-2">
-                  <label htmlFor="category" className="text-gray-800">Category</label>
-                  <select
-                    id="category"
-                    className="w-32 sm:w-[200px] p-3 border border-gray-300 rounded-lg focus:outline-none"
-                    value={category}
-                    onChange={(e) => setCategory(e.target.value)}
-                    required
-                  >
-                    <option value="">Select Category</option>
-                    <option value="category1">Category 1</option>
-                    <option value="category2">Category 2</option>
-                    <option value="category3">Category 3</option>
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="subcategory" className="text-gray-800">Sub Category</label>
-                  <select
-                    id="subcategory"
-                    className="w-32 sm:w-[200px] p-3 border border-gray-300 rounded-lg focus:outline-none"
-                    value={subCategory}
-                    onChange={(e) => setSubCategory(e.target.value)}
-                    required
-                  >
-                    <option value="">Select Sub Category</option>
-                    <option value="subCategory1">Sub Category 1</option>
-                    <option value="subCategory2">Sub Category 2</option>
-                    <option value="subCategory3">Sub Category 3</option>
-                  </select>
-                </div>
-              </div>
             </form>
           </div>
         </div>
       </div>
+      <hr className="my-8 border-t-2 border-gray-300" />
+      {/* Areas of Expertise */}
+      <div className={`${styles.paddingX} mt-10 sm:mt-24`}>
+        <h2 className="mb-6 text-2xl font-bold text-start sm:mb-10 text-[#00487C]">Areas of Expertise :</h2>
+        <div className="flex items-center justify-between">
+          <div className="mr-2">
+            <select
+              id="category"
+              className="w-32 sm:w-[428px] p-3 border border-[#00A896] rounded-lg focus:outline-none"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              required
+            >
+              <option value="">Category</option>
+              <option value="category1">Category 1</option>
+              <option value="category2">Category 2</option>
+              <option value="category3">Category 3</option>
+            </select>
+          </div>
+          <div>
+            <select
+              id="subcategory"
+              className="w-32 sm:w-[428px] p-3 border border-[#00A896] text-[#000000] rounded-lg focus:outline-none"
+              value={subCategory}
+              onChange={(e) => setSubCategory(e.target.value)}
+              required
+            >
+              <option value="">Sub Category</option>
+              <option value="subCategory1">Sub Category 1</option>
+              <option value="subCategory2">Sub Category 2</option>
+              <option value="subCategory3">Sub Category 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {/* Availability  */}
+      <div className={`${styles.paddingX} mt-8`}>
+        <h2 className="mb-6 text-2xl font-bold text-start sm:mb-10 text-[#00487C]">Availability :</h2>
+        <div className="flex items-center justify-between">
+          <div className="mr-2">
+            <select
+              id="category"
+              className="w-32 sm:w-[428px] p-3 border border-[#00A896] rounded-lg focus:outline-none"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              required
+            >
+              <option value="">Available Days</option>
+              <option value="category1">Days 1</option>
+              <option value="category2">Days 2</option>
+              <option value="category3">Days 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {/* About Experience */}
+      <div className={`${styles.paddingX} mt-8`}>
+        <h2 className="mb-6 text-2xl font-bold text-start sm:mb-10 text-[#00487C]">About Experience:</h2>
+        <div className="flex items-center justify-between">
+          <div className="mr-2">
+            <Textarea
+              id="experience"
+              className="w-[300px] h-32 sm:w-[1164px] sm:h-[228px] p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:border-blue-500 bg-white"
+              placeholder="Enter your experience"
+            />
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };

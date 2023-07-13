@@ -7,6 +7,7 @@ import ClientSlider from "./ClientSlider";
 import Community from "./Community";
 import Explore from "./Explore";
 import Mentors from "./Mentors";
+import CategoryForm from "./ContactForm";
 
 export {
   Navbar,
@@ -14,6 +15,7 @@ export {
   Status,
   Explore,
   ClientSlider,
+  CategoryForm,
   Community,
   Aboutus,
   Mentors,
