@@ -43,11 +43,8 @@
 }
 
 
-.bg-black-gradient {
-  background: linear-gradient(144.39deg,
-      #ffffff -278.56%,
-      #6d6d6d -78.47%,
-      #11101d 91.61%);
+.bg-white-gradient {
+  background: linear-gradient(90deg, #ffffff, #f2f2f2, #e6e6e6, #d9d9d9, #cccccc);
 }
 
 .bg-black-gradient-2 {

@@ -1,9 +1,9 @@
 import Home from "./Home";
-import Contact from "./Contact";
+import PersonalInfo from "./PersonalInfo";
 import About from "./About";
 
 export {
     Home,
     About,
-    Contact,
+    PersonalInfo,
 }
