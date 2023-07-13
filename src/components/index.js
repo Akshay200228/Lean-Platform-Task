@@ -1,19 +1,21 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Testimonials from "./Testimonials";
 import Aboutus from "./Aboutus";
 import Hero1 from "./Hero1";
 import Status from "./Status";
 import ClientSlider from "./ClientSlider";
-import Features from "./Features";
+import Community from "./Community";
+import Explore from "./Explore";
+import Mentors from "./Mentors";
 
 export {
   Navbar,
   Hero1,
   Status,
+  Explore,
   ClientSlider,
-  Features,
+  Community,
   Aboutus,
-  Testimonials,
+  Mentors,
   Footer,
 };

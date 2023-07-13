@@ -3,7 +3,7 @@ import styles from './style';
 import { Footer, Navbar } from './components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Contact, Docs, Home, About } from './pages';
+import { Contact, Home, About } from './pages';
 import Preloader from './constants/Preloader';
 import { Route, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom'
@@ -37,25 +37,21 @@ const App = () => {
           <Preloader />
         ) : ( */}
           <>
-            {/* <div className={`w-[100vh] ${styles.paddingX} ${styles.flexCenter}`}> */}
-            <div className={`w-1323 h-62 top-11 left-60 gap-x-342`}>
-              {/* <div className={`${styles.boxWidth}`}> */}
+            <div className={`w-1323 h-62 top-11 left-60`}>
                 <Navbar />
-              {/* </div> */}
             </div>
 
             <div className={`${styles.flexStart}`}>
               <div className={`${styles.boxWidth}`}>
                 <Routes>
                   <Route exact path="/" element={<Home />} />
-                  <Route path="/docs" element={<Docs />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/contact" element={<Contact />} />
                 </Routes>
               </div>
             </div>
 
-            <div className={`${styles.paddingX} ${styles.flexStart} mt-24 border-t border-gray-500 rounded-t-[100px] rounded-b-none shadow-md`} data-aos="fade">
+            <div className={`${styles.paddingX} ${styles.flexStart} mt-2 border-t border-gray-500 rounded-t-[100px] rounded-b-none shadow-md`} data-aos="fade">
             <div className={`${styles.boxWidth}`}>
               <Footer />
             </div>

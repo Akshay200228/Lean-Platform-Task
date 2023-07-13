@@ -18,7 +18,7 @@ const Aboutus = () => {
           </p>
         </div>
         <div className="p-4 ss:p-14 ss:w-1/2 sm:h-auto">
-          <img src={about} alt="Random image" className="border shadow-lg rounded-tr-[150px] rounded-bl-[150px] sm:rounded-tr-[350px] sm:rounded-bl-[350px]" />
+          <img src={about} alt="Random image" className="border shadow-lg rounded-tr-[150px] rounded-bl-[150px] ss:rounded-tr-[100px] sm:rounded-tr-[350px] ss:rounded-bl-[100px] sm:rounded-bl-[350px]" />
         </div>
       </div>
     </section>

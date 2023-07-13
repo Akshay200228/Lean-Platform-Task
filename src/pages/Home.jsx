@@ -1,5 +1,5 @@
 import React from 'react'
-import { Features, Aboutus, Hero1, Status, Testimonials } from '../components'
+import { Aboutus, Hero1, Explore, Community, Mentors } from '../components'
 import styles from '../style'
 
 const Home = () => {
@@ -8,9 +8,10 @@ const Home = () => {
             <div className={`${styles.boxWidth}`}>
                 <Hero1 />
                 <Aboutus />
-                {/* <Testimonials /> */}
+                <Explore />
+                <Community />
+                <Mentors />
                 {/* <Status /> */}
-                {/* <Features /> */}
             </div>
         </div>
     )

@@ -35,30 +35,20 @@ const Footer = () => {
         <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
           <div className="flex flex-col items-start">
             <img src={mh} alt="logo6" className="w-[148px] h-[73px] mb-6" />
-
-            {/* <Typography variant="paragraph" className="text-blue">
-              Technology Park,<br />
-              B-14 Asalpha Metro St,<br />
-              Mumbai, Maharashtra, India
-            </Typography> */}
-
-            {/* <Typography variant="paragraph" className="mt-6 text-blue">
-              Email: <a href="mailto:akshayrs096@gmail.com" className="text-blue">akshayrs096@gmail.com</a>
-            </Typography> */}
             <hr />
 
             <div className="flex mt-6 space-x-10">
               <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faFacebookF} className="text-xl text-blue hover:text-purple-400" />
+                <FontAwesomeIcon icon={faFacebookF} className="p-2 text-xl rounded-full text-blue hover:text-white hover:bg-blue-800" />
               </a>
               <a href="https://www.facebook.com/your-facebook-page" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faTwitter} className="text-xl text-blue hover:text-purple-400" />
+                <FontAwesomeIcon icon={faTwitter} className="p-2 text-xl rounded-full text-blue hover:text-blue-400 hover:bg-sky-50" />
               </a>
               <a href="https://www.twitter.com/your-twitter-profile" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedinIn} className="text-xl text-blue hover:text-purple-400" />
+                <FontAwesomeIcon icon={faLinkedinIn} className="p-2 text-xl text-blue hover:text-white hover:bg-blue-900" />
               </a>
               <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} className="text-xl text-blue hover:text-purple-400" />
+                <FontAwesomeIcon icon={faInstagram} className="p-2 text-xl rounded-full text-blue hover:text-white hover:bg-pink-500" />
               </a>
             </div>
           </div>
@@ -78,7 +68,7 @@ const Footer = () => {
                       as="a"
                       href="#"
                       color="gray"
-                      className="py-1.5 font-normal transition-colors text-blue hover:text-purple-400"
+                      className="py-1.5 font-normal transition-colors text-blu"
                     >
                       {link}
                     </Typography>
