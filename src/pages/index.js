@@ -1,6 +1,6 @@
 import Home from "./Home";
 import PersonalInfo from "./PersonalInfo";
-import Mentors from "./mentors";
+import Mentors from "./Mentors";
 
 export {
     Home,
