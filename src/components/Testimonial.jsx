@@ -3,7 +3,7 @@ import { motion, useSpring  } from 'framer-motion';
 import { avatar1, avatar2, avatar3 } from '../assets';
 import { useInView } from 'react-intersection-observer';
 
-const Mentors = () => {
+const Testimonial = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -82,4 +82,4 @@ const Mentors = () => {
   );
 };
 
-export default Mentors;
+export default Testimonial;

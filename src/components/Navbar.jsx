@@ -41,37 +41,42 @@ const Navbar = () => {
       className={`fixed top-0 z-50 flex items-center justify-between w-full px-4 py-4 ${scrolled ? 'bg-white' : 'bg-transparent'} navbar`}
       data-aos='fade-down' data-aos-delay='200'
     >
-      <motion.img
-        src={mh}
-        alt="logo"
-        className="w-[113px] h-[52px]"
-        drag
-        dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-        dragElastic={0.8}
-        {...springProps}
-        onDragStart={() => setIsDragging(true)}
-        onDragEnd={() => setIsDragging(false)}
-      />
+      <Link to='/'>
+        <motion.img
+          src={mh}
+          alt="logo"
+          className="w-[113px] h-[52px]"
+          drag
+          dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+          dragElastic={0.8}
+          {...springProps}
+          onDragStart={() => setIsDragging(true)}
+          onDragEnd={() => setIsDragging(false)}
+        />
+      </Link>
 
       <ul className="items-center justify-end hidden space-x-12 font-semibold sm:flex">
         <li>
-          <Link to="/" className='font-poppins cursor-pointer text-[16px] text-black hover:text-purple-400'>
+          <Link to="/" className="font-poppins cursor-pointer text-[16px] text-black hover:text-[#00487C] hover:bg-gray-100 px-3 py-2 rounded-md transition-colors duration-300">
             Home
           </Link>
         </li>
         <li>
-          <Link to="/personalInfo" className='font-poppins cursor-pointer text-[16px] text-black hover:text-purple-400'>
-          PersonalInfo
+          <Link to="/personalInfo" className="font-poppins cursor-pointer text-[16px] text-black hover:text-[#00487C] hover:bg-gray-100 px-3 py-2 rounded-md transition-colors duration-300">
+            PersonalInfo
           </Link>
         </li>
         <li>
-          <Link to="/mentors" className='font-poppins cursor-pointer text-[16px] text-black hover:text-purple-400'>
+          <Link to="/mentors" className="font-poppins cursor-pointer text-[16px] text-black hover:text-[#00487C] hover:bg-gray-100 px-3 py-2 rounded-md transition-colors duration-300">
             Mentors
           </Link>
         </li>
         <li>
-          <Link to="/sessions" className='font-poppins cursor-pointer text-[16px] text-black hover:text-purple-400'>
-            Sessions
+          <Link 
+            className="font-poppins cursor-pointer text-[16px] text-black hover:text-[#00487C] hover:bg-gray-100 px-3 py-2 rounded-md transition-colors duration-300" 
+            onClick={() => window.open('https://personal-portfolio-theta-nine.vercel.app/', '_blank')}
+>
+            Portfolio
           </Link>
         </li>
       </ul>
@@ -86,7 +91,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className="flex items-center justify-end flex-1 mr-14 sm:hidden">
+      <div className="flex items-center justify-end flex-1 mr-4 sm:hidden">
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -97,7 +102,7 @@ const Navbar = () => {
         />
 
         {toggle && (
-          <div className="mr-10 flex flex-col items-center p-6 bg-white-gradient absolute top-full right-0 mt-2 mx-4 min-w-[140px] rounded-xl sidebar">
+          <div className="mr-4 flex flex-col items-center p-6 bg-white-gradient absolute top-full right-0 mt-2 mx-4 min-w-[140px] rounded-xl sidebar">
             <ul className="flex flex-col items-start justify-end flex-1 mb-4 font-semibold list-none">
               <li className='mb-2'>
                 <Link to="/" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
@@ -105,18 +110,21 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className='mb-2'>
-                <Link to="/docs" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
-                  Docs
+                <Link to="/mentors" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
+                  Mentors
                 </Link>
               </li>
               <li className='mb-2'>
-                <Link to="/about" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
-                  About
+                <Link to="/personalInfo" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
+                  PersonalInfo
                 </Link>
               </li>
               <li>
-                <Link to="/personalInfo" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
-                  PersonalInfo
+                <Link 
+                  className='font-poppins cursor-pointer text-[16px] text-neutral-900'
+                  onClick={() => window.open('https://personal-portfolio-theta-nine.vercel.app/', '_blank')}
+                >
+                  Portfolio
                 </Link>
               </li>
             </ul>

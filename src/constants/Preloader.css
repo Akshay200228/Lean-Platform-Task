@@ -17,11 +17,11 @@
 
 .preloader-logo {
   max-width: 200px;
-  /* Adjust the max width of the logo */
 }
 
 /* Preloader.css */
 
 .preloader-container {
-  background: linear-gradient(to right, #020202, #190432);
+  background: linear-gradient(to right, #e1f5fe, #ffffff);
 }
+

@@ -13,14 +13,6 @@ const LINKS = [
     title: "Platform",
     items: ["Technology Park B-14 Asalpha Metro St, Mumbai, Maharashtra, India", "akshayrs096@gmail.com", "456-456-456"],
   },
-  // {
-  //   title: "Support Us",
-  //   items: ["Blog", "Newsletter", "Events", "Help Center"],
-  // },
-  // {
-  //   title: "Resource",
-  //   items: ["Blog", "Newsletter", "Events", "Help Center"],
-  // },
 ];
 
 const currentYear = new Date().getFullYear();

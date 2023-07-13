@@ -6,7 +6,7 @@ import Status from "./Status";
 import ClientSlider from "./ClientSlider";
 import Community from "./Community";
 import Explore from "./Explore";
-import Mentors from "./Mentors";
+import Testimonial from "./Testimonial";
 import CategoryForm from "./ContactForm";
 
 export {
@@ -18,6 +18,6 @@ export {
   CategoryForm,
   Community,
   Aboutus,
-  Mentors,
+  Testimonial,
   Footer,
 };

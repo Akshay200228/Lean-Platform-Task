@@ -3,7 +3,7 @@ import styles from './style';
 import { Footer, Navbar } from './components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { PersonalInfo, Home, About } from './pages';
+import { PersonalInfo, Home, Mentors } from './pages';
 import Preloader from './constants/Preloader';
 import { Route, Routes } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom'
@@ -32,10 +32,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="w-full overflow-hidden scroll-smooth bg-[#FFFFFF]">
-        {/* {isLoading ? (
+        {isLoading ? (
           // Preloader component
           <Preloader />
-        ) : ( */}
+        ) : (
         <>
           <div className={`w-1323 h-62 top-11 left-60`}>
                 <Navbar />
@@ -45,7 +45,7 @@ const App = () => {
             <div className={`${styles.boxWidth}`}>
               <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/mentors" element={<Mentors />} />
                 <Route path="/personalInfo" element={<PersonalInfo />} />
               </Routes>
             </div>
@@ -57,7 +57,7 @@ const App = () => {
             </div>
           </div>
         </>
-        {/* )} */}
+        )}
       </div>
     </BrowserRouter>
   );
