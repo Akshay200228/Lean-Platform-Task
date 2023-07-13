@@ -44,7 +44,7 @@ const PersonalInfo = () => {
         {/* Left side - Profile Image Upload */}
         <div className="flex items-center justify-center lg:w-1/2">
           <label htmlFor="image-upload" className="relative text-[#00487C]">
-            <h2 className="mb-6 text-2xl font-bold text-start sm:mb-10 text-[#00487C]">Personal Information :</h2>
+            <h2 className="mb-6 text-xl font-sans text-start sm:mb-10 text-[#00487C]">Personal Information :</h2>
             {profileImage ? (
               <img
                 src={profileImage}
@@ -125,12 +125,12 @@ const PersonalInfo = () => {
       <hr className="my-8 border-t-2 border-gray-300" />
       {/* Areas of Expertise */}
       <div className={`${styles.paddingX} mt-10 sm:mt-24`}>
-        <h2 className="mb-6 text-2xl font-bold text-start sm:mb-10 text-[#00487C]">Areas of Expertise :</h2>
-        <div className="flex items-center justify-between">
-          <div className="mr-2">
+        <h2 className="mb-6 text-xl font-sans text-start sm:mb-10 text-[#00487C]">Areas of Expertise:</h2>
+        <div className="flex flex-col items-start justify-between sm:flex-row">
+          <div className="mb-4 sm:mb-0 sm:mr-2">
             <select
               id="category"
-              className="w-32 sm:w-[428px] p-3 border border-[#00A896] rounded-lg focus:outline-none"
+              className="w-72 sm:w-[428px] p-3 border border-[#00A896] rounded-lg focus:outline-none"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
               required
@@ -141,10 +141,10 @@ const PersonalInfo = () => {
               <option value="category3">Category 3</option>
             </select>
           </div>
-          <div>
+          <div className="sm:ml-2">
             <select
               id="subcategory"
-              className="w-32 sm:w-[428px] p-3 border border-[#00A896] text-[#000000] rounded-lg focus:outline-none"
+              className="w-72 sm:w-[428px] p-3 border border-[#00A896] text-[#000000] rounded-lg focus:outline-none"
               value={subCategory}
               onChange={(e) => setSubCategory(e.target.value)}
               required
@@ -160,12 +160,12 @@ const PersonalInfo = () => {
 
       {/* Availability  */}
       <div className={`${styles.paddingX} mt-8`}>
-        <h2 className="mb-6 text-2xl font-bold text-start sm:mb-10 text-[#00487C]">Availability :</h2>
+        <h2 className="mb-6 text-xl font-sans text-start sm:mb-10 text-[#00487C]">Availability :</h2>
         <div className="flex items-center justify-between">
           <div className="mr-2">
             <select
               id="category"
-              className="w-32 sm:w-[428px] p-3 border border-[#00A896] rounded-lg focus:outline-none"
+              className="w-72 sm:w-[428px] p-3 border border-[#00A896] rounded-lg focus:outline-none"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
               required
@@ -181,12 +181,12 @@ const PersonalInfo = () => {
 
       {/* About Experience */}
       <div className={`${styles.paddingX} mt-8`}>
-        <h2 className="mb-6 text-2xl font-bold text-start sm:mb-10 text-[#00487C]">About Experience:</h2>
+        <h2 className="mb-6 text-xl font-sans text-start sm:mb-10 text-[#00487C]">About Experience:</h2>
         <div className="flex items-center justify-between">
           <div className="mr-2">
             <Textarea
               id="experience"
-              className="w-[300px] h-32 sm:w-[1164px] sm:h-[228px] p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:border-blue-500 bg-white"
+              className="w-[304px] h-36 sm:w-[1164px] sm:h-[228px] p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:border-blue-500 bg-white"
               placeholder="Enter your experience"
             />
           </div>
