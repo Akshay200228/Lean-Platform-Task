@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../style';
 import { form } from '../assets';
-import { Textarea } from '@material-tailwind/react';
-// import { CategoryForm } from '../components';
+
 
 const PersonalInfo = () => {
   const [profileImage, setProfileImage] = useState(null);
@@ -183,13 +182,7 @@ const PersonalInfo = () => {
       <div className={`${styles.paddingX} mt-8`}>
         <h2 className="mb-6 text-xl font-sans text-start sm:mb-10 text-[#00487C]">About Experience:</h2>
         <div className="flex items-center justify-between">
-          <div className="mr-2">
-            <Textarea
-              id="experience"
-              className="w-[304px] h-36 sm:w-[1164px] sm:h-[228px] p-3 border border-gray-300 rounded-lg resize-none focus:outline-none focus:border-blue-500 bg-white"
-              placeholder="Enter your experience"
-            />
-          </div>
+          <textarea rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
         </div>
       </div>
 
