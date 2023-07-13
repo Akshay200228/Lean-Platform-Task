@@ -98,7 +98,7 @@ const Mentors = () => {
   return (
     <section className={`${styles.paddingY} ${styles.paddingX} flex flex-col lg:flex-row bg-white`}>
       <div className="flex-1 mt-20 lg:order-1">
-        <h2 
+        <h2
           className='text-center text-5xl font-poppins text-[#292F36]'
         >
           Our Mentors
@@ -117,7 +117,7 @@ const Mentors = () => {
                 whileHover={{ scale: 1.05, rotateY: 10 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img src={mentor.image} alt={mentor.name} className="w-full mb-2 rounded-[30px]" />
+                <img src={mentor.image} alt={mentor.name} className="w-full mb-2 rounded-[30px]" loading='lazy' />
                 <h3 className="text-lg font-medium text-[#00487C]">{mentor.name}</h3>
                 <p className="text-lg text-[#00A896]">{mentor.jobRole}</p>
                 <div className="flex justify-center mt-4">
