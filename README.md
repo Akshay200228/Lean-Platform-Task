@@ -1,5 +1,8 @@
 # Lean Platform Technologies - TASK
 
+## Deploy Link
+https://lean-platform-task.vercel.app/
+
 ## Prerequisites
 
 Before running this project, make sure you have the following software installed on your machine:
