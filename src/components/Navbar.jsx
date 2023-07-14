@@ -110,13 +110,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className='mb-2'>
-                <Link to="/mentors" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
-                  Mentors
+                <Link to="/personalInfo" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
+                  PersonalInfo
                 </Link>
               </li>
               <li className='mb-2'>
-                <Link to="/personalInfo" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
-                  PersonalInfo
+                <Link to="/mentors" className='font-poppins cursor-pointer text-[16px] text-neutral-900'>
+                  Mentors
                 </Link>
               </li>
               <li>

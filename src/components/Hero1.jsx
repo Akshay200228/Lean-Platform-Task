@@ -5,6 +5,23 @@ import styles from '../style';
 import './Hero1.css';
 
 const Hero1 = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1.5 } },
+  };
+
+  const imageVariants = {
+    hidden: { rotateY: 90 },
+    visible: { rotateY: 0, transition: { duration: 1, delay: 0.5 } },
+  };
+
+  const charVariants = {
+    hidden: { y: '100%', opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 1, delay: 1 } },
+    hover: { scale: 1.2, transition: { duration: 0.3 } },
+  };
+
+
   return (
     <section id="hero" className={`mb-10 sm:mb-0 mt-4 md:mt-0 h-screen flex md:flex-row flex-col-reverse ${styles.paddingY}`}>
       {/* Left side */}
@@ -36,14 +53,30 @@ const Hero1 = () => {
 
        {/* Right side */}
       {/* Models */}
-      <div className={`flex mb-10 mt-10 sm:mt-0 sm:mb-0 items-end justify-end flex-1 lg:mt-0 relative`}>
-        <div className="absolute w-[200px] h-screen sm:w-auto sm:h-auto">
-          <img src={rectangle} alt="" className="object-cover w-[200px] h-full sm:w-[397px] sm:h-screen border rounded-bl-[150px]" />
-        </div>
-        <div className="absolute w-[200px] sm:w-[408px] h-[56px] sm:h-[432px] right-[100px] sm:right-[190px] top-[50px] sm:top-[80px] rounded-[16px]">
-          <img src={char} alt="" />
-        </div>
-      </div>
+      <div className="relative flex items-end justify-end flex-1 mt-10 mb-10 sm:mt-0 sm:mb-0 lg:mt-0">
+      <motion.div
+        className="absolute w-[200px] h-screen sm:w-auto sm:h-auto"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.img
+          src={rectangle}
+          alt=""
+          className="object-cover w-[200px] h-full sm:w-[397px] sm:h-screen border rounded-bl-[150px]"
+          variants={imageVariants}
+        />
+      </motion.div>
+      <motion.div
+        className="absolute w-[200px] sm:w-[408px] h-[56px] sm:h-[432px] right-[100px] sm:right-[190px] top-[50px] sm:top-[80px] rounded-[16px]"
+        variants={charVariants}
+        initial="hidden"
+        animate="visible"
+        whileHover="hover"
+      >
+        <motion.img src={char} alt="" />
+      </motion.div>
+    </div>
     </section>
   );
 };
