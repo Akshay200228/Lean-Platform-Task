@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../style';
 import { ArrowRightImg, form } from '../assets';
 import { useInView } from 'react-intersection-observer';
@@ -33,7 +33,6 @@ const PersonalInfo = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     // Handle form submission
     // You can perform validation and submit the data to your backend or perform other actions
     console.log('Profile Image:', profileImage);
@@ -44,6 +43,10 @@ const PersonalInfo = () => {
     console.log('Category:', category);
     console.log('Sub Category:', subCategory);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <motion.div

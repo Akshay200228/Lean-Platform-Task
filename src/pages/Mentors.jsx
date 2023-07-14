@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../style';
 import { motion } from 'framer-motion';
 import { mentor10, mentor2, mentor3, mentor4, mentor5, mentor6, mentor7, mentor9 } from '../assets';
@@ -94,6 +94,11 @@ const Mentors = () => {
     hidden: { opacity: 0, scale: 0.8, rotateY: 90 },
     visible: { opacity: 1, scale: 1, rotateY: 0 },
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   return (
     <section className={`${styles.paddingY} ${styles.paddingX} flex flex-col lg:flex-row bg-white`}>
